@@ -7,8 +7,8 @@ const Socials = () => {
                 <div className="social-button">
                     <a href="https://instagram.com/arthurazevedods" target="_blank">
                         <button className="relative w-12 h-12 rounded-full group">
-                            <div className="floater w-full h-full absolute top-0 left-0 bg-violet-400 rounded-full duration-300 group-hover:-top-8 group-hover:shadow-2xl"></div>
-                            <div className="icon relative z-10 w-full h-full flex items-center justify-center border-2 border-violet-400 rounded-full">
+                            <div className="floater w-full h-full absolute top-0 left-0 bg-purple-500 rounded-full duration-300 group-hover:-top-8 group-hover:shadow-2xl"></div>
+                            <div className="icon relative z-10 w-full h-full flex items-center justify-center border-2 border-purple-500 rounded-full">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     width="22"

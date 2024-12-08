@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { CgGitFork, CgFileDocument } from "react-icons/cg";
-import { FaCode } from "react-icons/fa";
+
 import { ImBlog } from "react-icons/im";
 import {
     AiFillStar,
@@ -31,7 +31,9 @@ function NavBar() {
                 <div className="container mx-auto flex items-center justify-between px-6 py-3">
                     {/* Brand Logo */}
                     <Link to="/" className="flex items-center">
-                        <FaCode className="text-white text-2xl" />
+                        <span className="text-white text-xl">
+                            {"<arthur/>"}
+                        </span>
                     </Link>
 
                     {/* Mobile Toggle */}
