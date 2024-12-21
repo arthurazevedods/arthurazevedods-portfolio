@@ -1,14 +1,14 @@
-import PropTypes from 'prop-types';
-const Card = (props) => {
+/* eslint-disable react/prop-types */
+const Card = ({project}) => {
     return (
         <div className="flex justify-center items-center my-3">
             <div className="max-w-[720px] mx-auto">
 
-                <div className="relative flex w-full max-w-[26rem] flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-lg">
+                <div className="relative flex w-full max-w-[26rem] h-[28rem] flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-lg">
                     <div className="relative mx-4 mt-4 overflow-hidden text-white shadow-lg rounded-xl bg-blue-gray-500 bg-clip-border shadow-blue-gray-500/40">
                         <img
-                            src="/assets/dona.png"
-                            alt="Site - Dona"
+                            src={project.image}
+                            alt={project.name}
                             className="w-full h-auto object-cover"
                         />
                     </div>
@@ -16,11 +16,11 @@ const Card = (props) => {
                     <div className="p-6">
                         <div className="flex items-center justify-between mb-3">
                             <h5 className="block font-sans text-xl antialiased font-medium leading-snug tracking-normal text-blue-gray-900">
-                                {props.name}
+                                {project.name}
                             </h5>
                         </div>
                         <p className="block font-sans text-base antialiased font-light leading-relaxed text-gray-700">
-                            {props.description}
+                            {project.description}
                         </p>
                         <a href="https://github.com/arthurazevedods/Dona" target="_blank" className="inline-flex flex-wrap items-center gap-3 mt-8 group">
                             <span
@@ -50,7 +50,3 @@ const Card = (props) => {
 
 export default Card;
 
-Card.propTypes = {
-    name: PropTypes.string,
-    description: PropTypes.string,
-};

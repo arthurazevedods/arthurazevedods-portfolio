@@ -1,0 +1,23 @@
+[
+    {
+        "name":"Dona",
+        "github":"https://github.com/arthurazevedods/Dona",
+        "url":"https://dona-three.vercel.app/",
+        "description":"Página principal e-commerce de roupas, desenvolvido utilizando HTML e CSS com o auxílio do Bootstrap.",
+        "image":"assets/dona.png"
+    },
+    {
+        "name":"Blog Codar Br",
+        "github":"https://github.com/arthurazevedods/Blog",
+        "url":"https://codarbr.vercel.app/",
+        "description":"Página principal de um blog sobre tecnologia, inovação e programação.",
+        "image":"assets/blog.png"
+    },
+    {
+        "name":"Respostas do Leetcode",
+        "github":"https://github.com/arthurazevedods/leetcode",
+        "url":"https://github.com/arthurazevedods/leetcode",
+        "description":"Repositório com respostas de questões do Leetcode de linguagens como: Golang, SQL, Javascript e entre outras.",
+        "image":"assets/leetcode.png"
+    }
+]
