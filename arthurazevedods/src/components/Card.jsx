@@ -2,9 +2,9 @@
 const Card = ({project}) => {
     return (
         <div className="flex justify-center items-center my-3">
-            <div className="max-w-[720px] mx-auto">
+            <div className="max-w-[620px] mx-auto">
 
-                <div className="relative flex w-full max-w-[26rem] h-[28rem] flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-lg">
+                <div className="relative flex w-full max-w-[23rem] h-[28rem] flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-lg">
                     <div className="relative mx-4 mt-4 overflow-hidden text-white shadow-lg rounded-xl bg-blue-gray-500 bg-clip-border shadow-blue-gray-500/40">
                         <img
                             src={project.image}

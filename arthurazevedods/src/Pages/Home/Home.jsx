@@ -1,8 +1,9 @@
-import Card from "../../components/Card";
+
 import Footer from "../../components/Footer";
 import Hero from "../../components/Hero";
 import Navbar from "../../components/Navbar";
 import Skills from "../../components/Skills";
+import CarrouselProjects from "../../components/CarouselProjects";
 
 import projects from '@json/projects.json';
 
@@ -17,14 +18,8 @@ export default function Home() {
         </h3>
       </div >
 
-      <ul className="container flex justify-around flex-wrap " >
-        {projects.map((project) => (
-          <li key={project.id}>
-            <Card project={project}  />
-          </li>
-        ))}
-        
-      </ul>
+      
+      <CarrouselProjects projects={projects}/>
       <Skills />
       <Footer />
     </>

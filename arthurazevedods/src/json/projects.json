@@ -19,5 +19,19 @@
         "url":"https://github.com/arthurazevedods/leetcode",
         "description":"Repositório com respostas de questões do Leetcode de linguagens como: Golang, SQL, Javascript e entre outras.",
         "image":"assets/leetcode.png"
-    }
+    },
+    {
+        "name":"Space Photos",
+        "github":"https://github.com/arthurazevedods/space-photos",
+        "url":"space-photos-teal.vercel.app",
+        "description":"Repositório com imagens do espaço.",
+        "image":"assets/space-today.png"
+    },
+    {
+        "name":"next-photography-portfolio",
+        "github":"https://github.com/arthurazevedods/next-photography-portfolio",
+        "url":"https://github.com/arthurazevedods/next-photography-portfolio",
+        "description":"Repositório de exemplo para fotográfos",
+        "image":"assets/leetcode.png"
+    } 
 ]
