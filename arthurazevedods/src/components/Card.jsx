@@ -22,7 +22,7 @@ const Card = ({project}) => {
                         <p className="block font-sans text-base antialiased font-light leading-relaxed text-gray-700">
                             {project.description}
                         </p>
-                        <a href="https://github.com/arthurazevedods/Dona" target="_blank" className="inline-flex flex-wrap items-center gap-3 mt-8 group">
+                        <a href={project.github} target="_blank" className="inline-flex flex-wrap items-center gap-3 mt-8 group">
                             <span
                                 className="cursor-pointer rounded-full border border-black/5 bg-black/5 p-3 text-black transition-colors hover:border-black/10 hover:bg-black/10 hover:!opacity-100 group-hover:opacity-70"
                             >

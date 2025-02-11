@@ -3,6 +3,7 @@
         "name":"Dona",
         "github":"https://github.com/arthurazevedods/Dona",
         "url":"https://dona-three.vercel.app/",
+        "tab":"projeto",
         "description":"Página principal e-commerce de roupas, desenvolvido utilizando HTML e CSS com o auxílio do Bootstrap.",
         "image":"assets/dona.png"
     },
@@ -11,12 +12,14 @@
         "github":"https://github.com/arthurazevedods/Blog",
         "url":"https://codarbr.vercel.app/",
         "description":"Página principal de um blog sobre tecnologia, inovação e programação.",
+        "tab":"projeto",
         "image":"assets/blog.png"
     },
     {
         "name":"Respostas do Leetcode",
         "github":"https://github.com/arthurazevedods/leetcode",
         "url":"https://github.com/arthurazevedods/leetcode",
+        "tab":"repositório",
         "description":"Repositório com respostas de questões do Leetcode de linguagens como: Golang, SQL, Javascript e entre outras.",
         "image":"assets/leetcode.png"
     },
@@ -24,6 +27,7 @@
         "name":"Space Photos",
         "github":"https://github.com/arthurazevedods/space-photos",
         "url":"space-photos-teal.vercel.app",
+        "tab":"projeto",
         "description":"Repositório com imagens do espaço.",
         "image":"assets/space-today.png"
     },
@@ -32,6 +36,16 @@
         "github":"https://github.com/arthurazevedods/next-photography-portfolio",
         "url":"https://github.com/arthurazevedods/next-photography-portfolio",
         "description":"Repositório de exemplo para fotográfos",
+        "tab":"projeto",
         "image":"assets/leetcode.png"
-    } 
+    },
+    {
+        "name":"Golang - Aulas",
+        "github":"https://github.com/arthurazevedods/Golang-Aulas",
+        "url":"https://github.com/arthurazevedods/Golang-Aulas",
+        "tab":"repositório",
+        "description":"Repositório com aulas de Golang",
+        "image":"assets/golang-aulas.png"
+    }
+
 ]
