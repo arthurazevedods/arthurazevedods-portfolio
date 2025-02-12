@@ -24,6 +24,14 @@
         "image":"assets/leetcode.png"
     },
     {
+        "name":"Aulas da disciplina de Programação Web",
+        "github":"https://github.com/arthurazevedods/ProgramacaoWeb",
+        "url":"https://github.com/arthurazevedods/ProgramacaoWeb",
+        "tab":"repositório",
+        "description":"Este repositório contém os materiais, exemplos de código e atividades práticas que serão utilizados ao longo do curso. Aqui você encontrará tudo o que precisa para acompanhar as aulas e se aprofundar nos conceitos de desenvolvimento web.",
+        "image":"assets/leetcode.png"
+    },
+    {
         "name":"Space Photos",
         "github":"https://github.com/arthurazevedods/space-photos",
         "url":"space-photos-teal.vercel.app",
