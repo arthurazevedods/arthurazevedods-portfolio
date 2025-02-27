@@ -35,7 +35,7 @@ function Hero() {
                         </div>
                     </div>
                 </div>
-                <Socials/>
+                <Socials className="pb-2"/>
             </section>
         </>
     );

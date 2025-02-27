@@ -2,7 +2,6 @@
 import Footer from "../../components/Footer";
 import Hero from "../../components/Hero";
 import Navbar from "../../components/Navbar";
-import Skills from "../../components/Skills";
 import CarouselProjects from "../../components/CarouselProjects";
 
 import projects from '@json/projects.json';
@@ -20,7 +19,6 @@ export default function Home() {
 
       
       <CarouselProjects projectsData={projects}/>
-      <Skills />
       <Footer />
     </>
 

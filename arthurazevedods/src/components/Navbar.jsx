@@ -32,7 +32,7 @@ function NavBar() {
                     {/* Brand Logo */}
                     <Link to="/" className="flex items-center">
                         <span className="text-white text-xl">
-                            {"<arthur/>"}
+                            {"arthur"}
                         </span>
                     </Link>
 
