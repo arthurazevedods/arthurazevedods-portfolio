@@ -1,5 +1,13 @@
 [
     {
+        "name": "Supervisão e Sinergia",
+        "github":"#",
+        "url": "https://supervisao-e-sinergia.vercel.app/",
+        "tab":"projeto",
+        "description":"Página do projeto 'Supervisão em Sinergia: Seu Espaço de Trocas e Experiências!'. Fazendo parte do Trabalho de Mestrado da Prof.ª Suzana de Jesus Almeida Calvet Barbosa. ",
+        "image":"assets/supervisao.png"
+    },
+    {
         "name":"Dona",
         "github":"https://github.com/arthurazevedods/Dona",
         "url":"https://dona-three.vercel.app/",
