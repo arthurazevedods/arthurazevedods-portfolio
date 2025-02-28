@@ -1,8 +1,8 @@
 
-import Footer from "../../components/Footer";
-import Hero from "../../components/Hero";
-import Navbar from "../../components/Navbar";
-import CarouselProjects from "../../components/CarouselProjects";
+import Footer from "../components/Footer";
+import Hero from "../components/Hero";
+import Navbar from "../components/Navbar";
+import CarouselProjects from "../components/CarouselProjects";
 
 import projects from '@json/projects.json';
 
