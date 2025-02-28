@@ -33,7 +33,7 @@ export default function CarouselProjects({ projectsData }) {
           <CarouselContent>
             {projects.map((project) => (
               <CarouselItem key={project.github} className="md:basis-1/2 lg:basis-1/3">
-                <Card project={project} />
+                <Card project={project} showUrlButton={true}/>
               </CarouselItem>
             ))}
           </CarouselContent>
@@ -49,7 +49,7 @@ export default function CarouselProjects({ projectsData }) {
           <CarouselContent>
             {repositories.map((repo) => (
               <CarouselItem key={repo.github} className="md:basis-1/2 lg:basis-1/3">
-                <Card project={repo} />
+                <Card project={repo} showUrlButton={false}/>
               </CarouselItem>
             ))}
           </CarouselContent>
