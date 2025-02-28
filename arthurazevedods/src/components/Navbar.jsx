@@ -106,7 +106,7 @@ function NavBar() {
                             <AiOutlineUser className="hidden lg:inline-block mb-1" /> Sobre Mim
                         </Link>
                         <Link
-                            to="/project"
+                            to="/projects"
                             className={`block transition px-6 py-2 md:px-0 md:py-0 ${colorLinksNavBar ? "text-blue-300 hover:text-white" : "text-black hover:text-blue-600"}`}
                             onClick={closeMobileMenu}
                         >
