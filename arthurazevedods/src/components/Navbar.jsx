@@ -48,21 +48,21 @@ function NavBar() {
             <nav
                 className={`fixed top-0 w-full z-50 px-8 transition-all ${navColour
                         ? "bg-blue-800 bg-opacity-80 shadow-md backdrop-blur-md"
-                        : "bg-white" // Troquei bg-black por bg-white
+                        : "bg-blue-200 md:bg-white"
                     }`}
                 ref={navRef}
             >
                 <div className="container mx-auto flex items-center justify-between px-6 py-3">
                     {/* Brand Logo */}
-                    <Link to="/" className="flex items-center" onClick={closeMobileMenu}>
-                        <span className="text-black text-xl"> {/* Troquei text-white por text-black */}
+                    <Link to="/" className="flex items-center " onClick={closeMobileMenu}>
+                        <span className="text-black text-xl"> 
                             {"arthur"}
                         </span>
                     </Link>
 
                     {/* Mobile Toggle */}
                     <button
-                        className="block md:hidden text-black focus:outline-none" // Troquei text-white por text-black
+                        className="block md:hidden text-black focus:outline-none" 
                         onClick={() => setExpand(!expand)}
                     >
                         <div className="space-y-1">
@@ -83,26 +83,26 @@ function NavBar() {
 
                     {/* Navigation Links */}
                     <div
-                        className={`md:flex md:items-center md:space-x-6 ${expand ? "block absolute top-16 left-0 w-full bg-blue-800 bg-opacity-80 backdrop-blur-md shadow-md md:static md:bg-transparent md:backdrop-blur-none md:shadow-none" : "hidden md:flex"
+                        className={`md:flex md:items-center md:space-x-6 ${expand ? "block absolute top-12 left-0 w-full bg-blue-200 bg-opacity-80 backdrop-blur-md shadow-md md:static md:bg-transparent md:backdrop-blur-none md:shadow-none" : "hidden md:flex"
                             }`}
                     >
                         <Link
                             to="/"
-                            className="block text-black hover:text-blue-600 transition px-6 py-2 md:px-0 md:py-0" // Troquei text-white por text-black
+                            className="block text-black hover:text-blue-600 transition px-6 py-2 md:px-0 md:py-0" 
                             onClick={closeMobileMenu}
                         >
                             <AiOutlineHome className="hidden lg:inline-block mb-1" /> Home
                         </Link>
                         <Link
                             to="/about"
-                            className="block text-black hover:text-blue-600 transition px-6 py-2 md:px-0 md:py-0" // Troquei text-white por text-black
+                            className="block text-black hover:text-blue-600 transition px-6 py-2 md:px-0 md:py-0" 
                             onClick={closeMobileMenu}
                         >
                             <AiOutlineUser className="hidden lg:inline-block mb-1" /> Sobre Mim
                         </Link>
                         <Link
                             to="/project"
-                            className="block text-black hover:text-blue-600 transition px-6 py-2 md:px-0 md:py-0" // Troquei text-white por text-black
+                            className="block text-black hover:text-blue-600 transition px-6 py-2 md:px-0 md:py-0" 
                             onClick={closeMobileMenu}
                         >
                             <AiOutlineFundProjectionScreen className="hidden lg:inline-block mb-1" />{" "}
@@ -110,7 +110,7 @@ function NavBar() {
                         </Link>
                         <Link
                             to="/resume"
-                            className="block text-black hover:text-blue-600 transition px-6 py-2 md:px-0 md:py-0" // Troquei text-white por text-black
+                            className="block text-black hover:text-blue-600 transition px-6 py-2 md:px-0 md:py-0" 
                             onClick={closeMobileMenu}
                         >
                             <CgFileDocument className="hidden lg:inline-block mb-1" /> Currículo
@@ -119,7 +119,7 @@ function NavBar() {
                             href="https://medium.com/@arthurazevedods"
                             target="_blank"
                             rel="noreferrer"
-                            className="block text-black hover:text-blue-600 transition px-6 py-2 md:px-0 md:py-0" // Troquei text-white por text-black
+                            className="block text-black hover:text-blue-600 transition px-6 py-2 md:px-0 md:py-0" 
                             onClick={closeMobileMenu}
                         >
                             <ImBlog className="hidden lg:inline-block mb-1" /> Blogs
