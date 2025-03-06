@@ -93,30 +93,46 @@ function NavBar() {
                     >
                         <Link
                             to="/"
-                            className={`block transition px-6 py-2 md:px-0 md:py-0 ${colorLinksNavBar ? "text-blue-300 hover:text-white" : "text-black hover:text-blue-600"}`}
-                            onClick={closeMobileMenu}
+                            className={`block transition px-6 py-2 md:px-0 md:py-0 ${colorLinksNavBar
+                                ? expand
+                                    ? "text-black hover:text-blue-600"
+                                    : "text-blue-300 hover:text-white"
+                                : "text-black hover:text-blue-600"
+                                }`} onClick={closeMobileMenu}
                         >
                             <AiOutlineHome className="hidden lg:inline-block mb-1" /> Home
                         </Link>
                         <Link
                             to="/about"
-                            className={`block transition px-6 py-2 md:px-0 md:py-0 ${colorLinksNavBar ? "text-blue-300 hover:text-white" : "text-black hover:text-blue-600"}`}
-                            onClick={closeMobileMenu}
+                            className={`block transition px-6 py-2 md:px-0 md:py-0 ${colorLinksNavBar
+                                ? expand
+                                    ? "text-black hover:text-blue-600"
+                                    : "text-blue-300 hover:text-white"
+                                : "text-black hover:text-blue-600"
+                                }`} onClick={closeMobileMenu}
                         >
                             <AiOutlineUser className="hidden lg:inline-block mb-1" /> Sobre Mim
                         </Link>
                         <Link
                             to="/projects"
-                            className={`block transition px-6 py-2 md:px-0 md:py-0 ${colorLinksNavBar ? "text-blue-300 hover:text-white" : "text-black hover:text-blue-600"}`}
+                            className={`block transition px-6 py-2 md:px-0 md:py-0 ${colorLinksNavBar
+                                ? expand
+                                    ? "text-black hover:text-blue-600"
+                                    : "text-blue-300 hover:text-white"
+                                : "text-black hover:text-blue-600"
+                                }`}
                             onClick={closeMobileMenu}
                         >
-                            <AiOutlineFundProjectionScreen className="hidden lg:inline-block mb-1" />{" "}
-                            Projetos
+                            <AiOutlineFundProjectionScreen className="hidden lg:inline-block mb-1" /> Projetos
                         </Link>
                         <Link
                             to="/resume"
-                            className={`block transition px-6 py-2 md:px-0 md:py-0 ${colorLinksNavBar ? "text-blue-300 hover:text-white" : "text-black hover:text-blue-600"}`}
-                            onClick={closeMobileMenu}
+                            className={`block transition px-6 py-2 md:px-0 md:py-0 ${colorLinksNavBar
+                                ? expand
+                                    ? "text-black hover:text-blue-600"
+                                    : "text-blue-300 hover:text-white"
+                                : "text-black hover:text-blue-600"
+                                }`} onClick={closeMobileMenu}
                         >
                             <CgFileDocument className="hidden lg:inline-block mb-1" /> Currículo
                         </Link>
@@ -124,8 +140,12 @@ function NavBar() {
                             href="https://medium.com/@arthurazevedods"
                             target="_blank"
                             rel="noreferrer"
-                            className={`block transition px-6 py-2 md:px-0 md:py-0 ${colorLinksNavBar ? "text-blue-300 hover:text-white" : "text-black hover:text-blue-600"}`}
-                            onClick={closeMobileMenu}
+                            className={`block transition px-6 py-2 md:px-0 md:py-0 ${colorLinksNavBar
+                                ? expand
+                                    ? "text-black hover:text-blue-600"
+                                    : "text-blue-300 hover:text-white"
+                                : "text-black hover:text-blue-600"
+                                }`} onClick={closeMobileMenu}
                         >
                             <ImBlog className="hidden lg:inline-block mb-1" /> Blogs
                         </a>

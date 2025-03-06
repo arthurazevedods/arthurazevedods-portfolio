@@ -5,6 +5,7 @@ import Navbar from "../components/Navbar";
 import CarouselProjects from "../components/CarouselProjects";
 
 import projects from '@json/projects.json';
+import FormContactMe from "@/components/FormContactMe";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
 
       
       <CarouselProjects projectsData={projects}/>
+      <FormContactMe />
       <Footer />
     </>
 

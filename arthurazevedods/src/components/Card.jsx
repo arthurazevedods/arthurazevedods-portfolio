@@ -6,7 +6,7 @@ const Card = ({ project, showUrlButton }) => {
         githubExists = false;
     }
     return (
-        <div className="flex justify-center items-center my-3">
+        <div className="flex justify-center items-center my-5">
             <div className="max-w-[620px] mx-auto">
                 <div className="relative flex w-full max-w-[23rem] h-[28rem] flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-lg">
                     {/* Image */}

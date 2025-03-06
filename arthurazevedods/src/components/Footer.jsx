@@ -3,7 +3,7 @@ function Footer() {
     return (
         <>
             <footer className="bg-white">
-                <div className="mx-auto max-w-screen-xl px-4 pt-16 pb-8 sm:px-6 lg:px-8 lg:pt-24">
+                <div className="mx-auto max-w-screen-xl px-4 pb-8 sm:px-6 lg:px-8 ">
                     
 
                     <div
