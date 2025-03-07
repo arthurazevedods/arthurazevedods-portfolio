@@ -3,7 +3,7 @@ import Button from './ButtonSend';
 import Socials from './Socials';
 import axios from "axios";
 
-const apiUrl = import.meta.env.REACT_APP_API_URL;
+
 function FormContactMe() {
     const [formData, setFormData] = useState({
         name: '',
@@ -29,7 +29,7 @@ function FormContactMe() {
         try {
             //const response = await axios.post(`http://localhost:3001/send-email` ,{
             //console.log(apiUrl);
-            const response = await axios.post(`${apiUrl}/send-email`, {
+            const response = await axios.post(`${import.meta.env.VITE_API_URL}/send-email`, {
                 headers: {
                     'Content-Type': 'application/json',
                 },
