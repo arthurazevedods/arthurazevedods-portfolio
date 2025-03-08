@@ -6,6 +6,7 @@ import {
 import Home from "./Pages/Home";
 import About from "./Pages/About";
 import Projects from "./Pages/Projects";
+import Curriculum from "./Pages/Curriculum";
 
 function Main() {
   return (
@@ -14,6 +15,7 @@ function Main() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
+        <Route path="/resume" element={<Curriculum /> } />
       </Routes>
     </BrowserRouter>
   );
