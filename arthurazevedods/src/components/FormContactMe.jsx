@@ -43,7 +43,8 @@ function FormContactMe() {
                 setError(response.data.error || 'Erro ao enviar o formulário.');
             }
         } catch (err) {
-            setError('Erro ao conectar ao servidor:', err);
+            console.error('Erro ao enviar o formulário:', err);
+            setError(`Erro ao enviar o formulário: ${err.message}`);
         } finally {
             setLoading(false);
         }
