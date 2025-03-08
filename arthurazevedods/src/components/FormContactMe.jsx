@@ -29,11 +29,11 @@ function FormContactMe() {
         try {
             //const response = await axios.post(`http://localhost:3001/send-email` ,{
             //console.log(apiUrl);
-            const response = await axios.post(`${import.meta.env.VITE_API_URL}/send-email`, {
+            const response = await axios.post(`${import.meta.env.VITE_API_URL}/send-email`, formData, {
                 headers: {
                     'Content-Type': 'application/json',
                 },
-                data: JSON.stringify(formData),
+                timeout: 10000, // 10 segundos
             });
             console.log(response.status);
             if (response.status === 200) {
