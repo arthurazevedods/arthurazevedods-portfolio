@@ -1,9 +1,13 @@
+import Footer from "@/components/Footer"
+import NavBar from "@/components/Navbar"
 
 function Curriculum() {
   return (
-    <div>
-      Currículo
-    </div>
+    <>
+      <NavBar />
+      
+      <Footer />
+    </>
   )
 }
 
