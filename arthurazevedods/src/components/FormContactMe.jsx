@@ -1,9 +1,8 @@
 import { useState } from 'react';
 import Button from './ButtonSend';
 import Socials from './Socials';
-import axios from "axios";
+import axios from 'axios';
 
-console.log('API URL:', import.meta.env.VITE_API_URL);
 function FormContactMe() {
     const [formData, setFormData] = useState({
         name: '',
@@ -27,13 +26,8 @@ function FormContactMe() {
         setSuccess(false);
 
         try {
-            //const response = await axios.post(`http://localhost:3001/send-email` ,{
-            //console.log(apiUrl);
-            const apiUrl = import.meta.VITE_API_URL;
-            if (!apiUrl) {
-                console.error('VITE_API_URL is not defined');
-                return;
-            }
+            const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:3001';
+            console.log('API URL:', apiUrl);
 
             const response = await axios.post(`${apiUrl}/send-email`, formData, {
                 headers: {
@@ -41,7 +35,7 @@ function FormContactMe() {
                 },
                 timeout: 10000, // 10 segundos
             });
-            console.log(response.status);
+
             if (response.status === 200) {
                 setSuccess(true);
                 setFormData({ name: '', email: '', phone: '', message: '' }); // Limpa o formulário
