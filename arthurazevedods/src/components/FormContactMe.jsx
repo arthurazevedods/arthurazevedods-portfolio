@@ -3,7 +3,7 @@ import Button from './ButtonSend';
 import Socials from './Socials';
 import axios from "axios";
 
-
+console.log('API URL:', import.meta.env.VITE_API_URL);
 function FormContactMe() {
     const [formData, setFormData] = useState({
         name: '',
