@@ -26,7 +26,7 @@ function FormContactMe() {
         setSuccess(false);
 
         try {
-            const apiUrl = import.meta.VITE_API_URL;
+            const apiUrl = import.meta.env.VITE_API_URL;
             console.log('API URL:', apiUrl);
 
             const response = await axios.post(`${apiUrl}/send-email`, formData, {
