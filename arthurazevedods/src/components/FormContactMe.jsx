@@ -29,7 +29,13 @@ function FormContactMe() {
         try {
             //const response = await axios.post(`http://localhost:3001/send-email` ,{
             //console.log(apiUrl);
-            const response = await axios.post(`${import.meta.env.VITE_API_URL}/send-email`, formData, {
+            const apiUrl = import.meta.env.VITE_API_URL;
+            if (!apiUrl) {
+                console.error('VITE_API_URL is not defined');
+                return;
+            }
+
+            const response = await axios.post(`${apiUrl}/send-email`, formData, {
                 headers: {
                     'Content-Type': 'application/json',
                 },
