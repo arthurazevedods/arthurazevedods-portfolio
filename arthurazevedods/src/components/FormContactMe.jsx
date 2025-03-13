@@ -26,7 +26,7 @@ function FormContactMe() {
         setSuccess(false);
 
         try {
-            const apiUrl = import.meta.env.VITE_API_URL;
+            const apiUrl = import.meta.env.VITE_API_URL || "http://localhost:3001";
             console.log('API URL:', apiUrl);
 
             const response = await axios.post(`${apiUrl}/send-email`, formData, {
@@ -39,12 +39,22 @@ function FormContactMe() {
             if (response.status === 200) {
                 setSuccess(true);
                 setFormData({ name: '', email: '', phone: '', message: '' }); // Limpa o formulário
+                setTimeout(() => setSuccess(false), 5000); // Remove a mensagem de sucesso após 5 segundos
             } else {
                 setError(response.data.error || 'Erro ao enviar o formulário.');
             }
         } catch (err) {
             console.error('Erro ao enviar o formulário:', err);
-            setError(`Erro ao enviar o formulário: ${err.message}`);
+            if (err.response) {
+                // Erro retornado pelo backend
+                setError(err.response.data.error || 'Erro ao enviar o formulário.');
+            } else if (err.request) {
+                // Erro de rede (backend inacessível)
+                setError('Não foi possível conectar ao servidor. Tente novamente mais tarde.');
+            } else {
+                // Outros erros
+                setError('Erro ao enviar o formulário. Tente novamente.');
+            }
         } finally {
             setLoading(false);
         }
