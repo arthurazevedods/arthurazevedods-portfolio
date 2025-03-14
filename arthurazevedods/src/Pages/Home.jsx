@@ -6,12 +6,14 @@ import CarouselProjects from "../components/CarouselProjects";
 
 import projects from '@json/projects.json';
 import FormContactMe from "@/components/FormContactMe";
+import Services from "@/components/Services";
 
 export default function Home() {
   return (
     <>
       <Navbar />
       <Hero />
+      <Services />
       <div className="m-auto  text-3xl justify-start block  mt-4  pb-2 max-w-[360px]">
         <h3>
           <b>Projetos</b> & Repositórios.
