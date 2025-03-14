@@ -3,10 +3,9 @@ import {
   Database,
   BookOpen,
   ChartBar,
-  UserCircle,
-  Shield
+  Lightbulb,
+  Bot
 } from 'lucide-react';
-
 const services = [
   {
     icon: <Code className="h-6 w-6 text-blue-600" />,
@@ -24,19 +23,19 @@ const services = [
     description: "Aulas sob medida para suas necessidades, com foco em programação, análise de dados e muito mais."
   },
   {
+    icon: <Lightbulb className="h-6 w-6 text-yellow-400" />,
+    title: "Criação de MVP's",
+    description: "Desenvolvemos MVPs (Produtos Viáveis Mínimos) para validar suas ideias de negócios de forma rápida e eficiente."
+  },
+  {
     icon: <ChartBar className="h-6 w-6 text-purple-600" />,
     title: "Relatórios e Dashboards",
     description: "Visualize dados de forma clara e intuitiva com dashboards interativos e relatórios detalhados."
   },
   {
-    icon: <UserCircle className="h-6 w-6 text-indigo-600" />,
-    title: "Consultoria Especializada",
-    description: "Suporte técnico e consultoria para otimizar seus projetos e processos."
-  },
-  {
-    icon: <Shield className="h-6 w-6 text-red-600" />,
-    title: "Segurança de Dados",
-    description: "Proteja suas informações com soluções de segurança avançadas e boas práticas."
+    icon: <Bot className="h-6 w-6 text-red-600" />,
+    title: "Robótica Educacional",
+    description: "Introdução à robótica e programação para crianças e jovens, promovendo o aprendizado prático e criativo."
   }
 ];
 
@@ -52,7 +51,7 @@ const Services = () => {
             Soluções completas para suas necessidades
           </h3>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Oferecemos serviços especializados em desenvolvimento web, análise de dados e educação para impulsionar seus projetos.
+            Oferecemos serviços especializados em desenvolvimento web, análise de dados, educação e inovação para impulsionar seus projetos.
           </p>
         </div>
 
