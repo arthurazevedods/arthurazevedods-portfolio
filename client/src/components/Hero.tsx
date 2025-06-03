@@ -3,7 +3,7 @@
 export default function Hero() {
   return (
     <div className="flex flex-col justify-center">
-      <div className="relative isolate py-12 sm:py-20 lg:py-24">
+      <div className="relative isolate  py-12">
         
         <div className="mx-auto max-w-2xl py-12 sm:py-10 lg:py-6">
           <div className="text-start">
