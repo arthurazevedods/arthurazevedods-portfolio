@@ -6,7 +6,7 @@ import RecentWorks from "./components/RecentWorks";
 
 function App() {
   return (
-    <div className="flex flex-col min-h-[100vh] bg-background text-foreground">
+    <div className="flex flex-col min-h-[100vh] w-full bg-background text-foreground">
       <Navbar />
       <main className="flex-1">
         <Hero />
