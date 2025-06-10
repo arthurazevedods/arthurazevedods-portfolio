@@ -7,7 +7,7 @@ export default function Hero() {
         
         <div className="mx-auto max-w-2xl py-12 sm:py-10 lg:py-6">
           <div className="text-start">
-            <h1 className="text-5xl  tracking-tight text-balance text-[#f8f8f2] sm:text-7xl">
+            <h1 className="sm:text-5xl md:text-6xl font-semibold tracking-tight text-balance text-[#f8f8f2] " style={{ fontFamily: "var(--font-titles)" }} >
               Olá, sou o <span className="font-extrabold">Arthur</span>
             </h1>
             <p className="mt-8 text-lg font-medium text-pretty text-[#bd93f9] sm:text-xl/8">
