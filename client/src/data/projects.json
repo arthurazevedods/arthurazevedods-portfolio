@@ -1,0 +1,15 @@
+[
+  {
+    "title":"Blog Codar Br",
+    "subtitle": "2025 - Desenvolvedor",
+    "description": "Página principal de um blog sobre tecnologia, inovação e programação.",
+    "github":"https://github.com/arthurazevedods/Blog",
+    "link":"https://codarbr.vercel.app/"
+  },
+  {
+    "title": "Supervisão e Sinergia",
+    "link": "https://supervisao-e-sinergia.vercel.app/",
+    "description":"Página do projeto 'Supervisão em Sinergia: Seu Espaço de Trocas e Experiências!'. Fazendo parte do Trabalho de Mestrado da Prof.ª Suzana de Jesus Almeida Calvet Barbosa. ",
+    "subtitle":"2023 - Desenvolvedor"
+  }
+]

@@ -1,23 +1,36 @@
-import LinkIcon from '@mui/icons-material/Link';
+import LinkIcon from "@mui/icons-material/Link";
 
-function CardProject() {
+type Project = {
+  title: string;
+  subtitle: string;
+  description: string;
+  link?: string;
+};
+
+function CardProject({ project }: { project: Project }) {
   return (
-    <div className="rounded-[20px] flex justify-around bg-[var(--card)] p-4 gap-1">
+    <div className="rounded-[20px] flex justify-between bg-[var(--card)] p-4 gap-1">
       <div className="flex flex-col text-start">
         <div className="pb-5">
-          <h4 className="text-[var(--foreground)]">Valfenda</h4>
-          <span className="text-[var(--color-secondary)]">something</span>
+          <h4 className="text-[var(--foreground)] text-2xl">{project.title}</h4>
+          <span className="text-[var(--color-secondary)] text-sm">{project.subtitle}</span>
         </div>
 
-        <div className="text-[var(--foreground)]">
-          Uma aplicação de biblioteca pessoal, criada em react e golang.
+        <div className="text-[var(--foreground)] text-md">
+          {project.description}
         </div>
       </div>
-      {/*Buttons */}
-      <div className="flex flex-col justify-end">
-        <button className="rounded-full w-10 h-10 border border-[var(--border)] text-[var(--foreground)]">
-          <LinkIcon />
-        </button>
+      {/* Button */}
+      <div className="flex flex-col justify-end group">
+        <a
+          href={project.link || "#"}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="rounded-full w-12 h-12 border border-[var(--border)] text-[var(--foreground)] hover:bg-[var(--secondary)] flex items-center justify-center transition-colors"
+          aria-label="Acessar projeto"
+        >
+          <LinkIcon style={{ transform: "rotate(45deg)" }} />
+        </a>
       </div>
     </div>
   );
