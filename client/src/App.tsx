@@ -1,6 +1,7 @@
 import "./App.css";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
+import LanguagesAndFrameworks from "./components/LanguagesAndFrameworks";
 import Navbar from "./components/Navbar";
 import RecentWorks from "./components/RecentWorks";
 
@@ -11,6 +12,7 @@ function App() {
       <main className="flex-1">
         <Hero />
         <RecentWorks />
+        <LanguagesAndFrameworks />
       </main>
       <Footer />
     </div>
