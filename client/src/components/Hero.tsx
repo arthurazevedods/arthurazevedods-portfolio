@@ -2,9 +2,9 @@ export default function Hero() {
   return (
     <section className="flex flex-col justify-center min-h-[40vh] py-8 md:py-12">
       <div className="relative isolate">
-        <div className="mx-auto container py-6 sm:py-8 lg:py-10">
+        <div className="mx-auto container mt-4 py-6 sm:py-8 lg:py-10">
           <div className="text-start">
-            <h1 className="sm:text-6xl md:text-9xl font-semibold tracking-tight text-balance text-[#f8f8f2]"
+            <h1 className="text-6xl sm:text-7xl md:text-9xl font-semibold tracking-tight text-balance text-[#f8f8f2]"
               style={{ fontFamily: "var(--font-titles)" }}>
               Olá, sou o <span className="font-extrabold">Arthur</span>
             </h1>
