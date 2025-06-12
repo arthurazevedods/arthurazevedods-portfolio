@@ -50,6 +50,9 @@ function Navbar() {
               <a className="text-lg py-2 px-4">Home</a>
             </li>
             <li>
+              <a className="text-lg py-2 px-4">Sobre Mim</a>
+            </li>
+            <li>
               <a className="text-lg py-2 px-4">Portfolio</a>
               <ul className="p-2">
                 <li>
@@ -81,6 +84,9 @@ function Navbar() {
         <ul className="menu menu-horizontal px-1 text-xl gap-2">
           <li>
             <a className="px-4 py-2">Home</a>
+          </li>
+          <li>
+            <a className="px-4 py-2">Sobre Mim</a>
           </li>
           <li>
             <details>

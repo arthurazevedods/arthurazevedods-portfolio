@@ -1,0 +1,25 @@
+import "./App.css";
+import Footer from "@/components/Footer";
+import Hero from "@/components/Hero";
+import Skills from "@/components/Skills";
+import Navbar from "@/components/Navbar";
+import RecentWorks from "@/components/RecentWorks";
+
+export const Route = createFileRoute({
+  component: Index,
+})
+
+function Index() {
+  return (
+    <div className="flex flex-col min-h-[100vh] w-full bg-background text-foreground">
+      <Navbar />
+      <main className="flex-1">
+        <Hero />
+        <RecentWorks />
+        <Skills />
+      </main>
+      <Footer />
+    </div>
+  );
+}
+
