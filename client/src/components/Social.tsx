@@ -1,4 +1,5 @@
 import { FaGithub, FaXTwitter } from "react-icons/fa6";
+import { FiMail } from "react-icons/fi";
 
 export default function Social() {
   return (
@@ -15,6 +16,22 @@ export default function Social() {
       <div className="relative">
         <div className="absolute inset-0 bg-[#282a36]/80 backdrop-blur-xl rounded-2xl border border-[#44475a]/40 shadow-2xl" />
         <div className="relative flex items-end gap-x-3 p-3">
+          {/* E-mail */}
+          <div className="relative">
+            <a
+              href="mailto:arthurazevedods@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="E-mail"
+            >
+              <div
+                style={{ clipPath: "url(#squircleClip)" }}
+                className="w-14 h-14 bg-gradient-to-br from-[var(--foreground)] via-[#d02222] to-[#d02222] rounded-xl flex items-center justify-center shadow-lg border border-[#ff5555]/50 cursor-pointer transition-all duration-300 ease-out hover:scale-110 hover:-translate-y-2 hover:shadow-2xl"
+              >
+                <FiMail className="h-8 w-8 text-[var(--foreground)]" />
+              </div>
+            </a>
+          </div>
           {/* Github */}
           <div className="relative">
             <a
