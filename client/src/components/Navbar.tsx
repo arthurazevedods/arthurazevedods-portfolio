@@ -100,7 +100,7 @@ function Navbar() {
               <summary className="px-8 py-2">Blog</summary>
               <ul className="p-2">
                 <li>
-                  <a className="text-base py-2 px-4">Medium</a>
+                  <a className="text-base py-2 px-4" href="https://medium.com/@arthurazevedods">Medium</a>
                 </li>
                 <li>
                   <a className="text-base py-2 px-4">Codar Br</a>

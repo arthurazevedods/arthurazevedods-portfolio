@@ -1,11 +1,15 @@
+import Social from "./Social";
+
 export default function Hero() {
   return (
-    <section className="flex flex-col justify-center min-h-[40vh] py-8 md:py-12">
-      <div className="relative isolate">
-        <div className="mx-auto container mt-4 py-6 sm:py-8 lg:py-10">
-          <div className="text-start">
-            <h1 className="text-6xl sm:text-7xl md:text-9xl font-semibold tracking-tight text-balance text-[#f8f8f2]"
-              style={{ fontFamily: "var(--font-titles)" }}>
+    <section className="flex flex-col justify-between min-h-[40vh] py-8 md:py-12">
+      <div className="relative isolate flex flex-col h-full justify-between">
+        <div className="mx-auto container mt-4 py-6 sm:py-8 lg:py-10 flex-1 flex flex-col">
+          <div className="text-start flex flex-col">
+            <h1
+              className="text-6xl sm:text-7xl md:text-9xl font-semibold tracking-tight text-balance text-[#f8f8f2]"
+              style={{ fontFamily: "var(--font-titles)" }}
+            >
               Olá, sou o <span className="font-extrabold">Arthur</span>
             </h1>
             <p className="mt-10 text-5xl font-medium text-pretty text-[#bd93f9] sm:text-3xl/8">
@@ -21,6 +25,9 @@ export default function Hero() {
                 Fale comigo
               </a>
             </div>
+          </div>
+          <div className="flex justify-center mt-8 flex-1 items-end">
+            <Social />
           </div>
         </div>
       </div>

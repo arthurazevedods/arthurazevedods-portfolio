@@ -3,7 +3,7 @@ import projectsData from "../data/projects.json";
 
 function RecentWorks() {
   return (
-    <section className="container mx-auto  py-20 md:py-32">
+    <section className="container mx-auto">
       <h3
         className="flex justify-start text-5xl md:text-6xl font-bold pb-14"
         style={{ fontFamily: "var(--font-titles)" }}
