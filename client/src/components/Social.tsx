@@ -1,5 +1,5 @@
 import { FaGithub, FaXTwitter } from "react-icons/fa6";
-import { FiMail } from "react-icons/fi";
+//import { FiMail } from "react-icons/fi";
 
 export default function Social() {
   return (
@@ -17,6 +17,7 @@ export default function Social() {
         <div className="absolute inset-0 bg-[#282a36]/80 backdrop-blur-xl rounded-2xl border border-[#44475a]/40 shadow-2xl" />
         <div className="relative flex items-end gap-x-3 p-3">
           {/* E-mail */}
+          {/* 
           <div className="relative">
             <a
               href="mailto:arthurazevedods@gmail.com"
@@ -32,6 +33,7 @@ export default function Social() {
               </div>
             </a>
           </div>
+          */}
           {/* Github */}
           <div className="relative">
             <a
@@ -72,6 +74,7 @@ export default function Social() {
             </a>
           </div>
           {/* Youtube */}
+          {/**
           <div className="relative">
             <a
               href="https://www.youtube.com/"
@@ -94,6 +97,7 @@ export default function Social() {
               </div>
             </a>
           </div>
+           */}
           {/* Twitter/X */}
           <div className="relative">
             <a

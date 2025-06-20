@@ -1,15 +1,32 @@
 [
   {
     "title":"Blog Codar Br",
-    "subtitle": "2025 - Desenvolvedor",
+    "subtitle": "2025 - Pessoal - Desenvolvedor",
     "description": "Página principal de um blog sobre tecnologia, inovação e programação.",
     "github":"https://github.com/arthurazevedods/Blog",
-    "link":"https://codarbr.vercel.app/"
+    "link":"https://codarbr.vercel.app/",
+    "tag":"projeto"
+  },
+  {
+    "title": "Senhas",
+    "link": "arthurazevedods.vercel.app",
+    "description":"MVP de um sistema gerenciador de filas para estabelecimentos de chamada de clientes",
+    "subtitle":"2025 - MVP - Desenvolvedor",
+    "tag":"projeto"
   },
   {
     "title": "Supervisão e Sinergia",
     "link": "https://supervisao-e-sinergia.vercel.app/",
     "description":"Página do projeto 'Supervisão em Sinergia: Seu Espaço de Trocas e Experiências!'. Fazendo parte do Trabalho de Mestrado da Prof.ª Suzana de Jesus Almeida Calvet Barbosa. ",
-    "subtitle":"2023 - Desenvolvedor"
+    "subtitle":"2023 - Profissional - Desenvolvedor",
+    "tag":"projeto"
+  },
+  {
+    "title": "Alvo CRM",
+    "link": "https://crm.alvoagencia.com/",
+    "description":"Organize conversas do seu time de todos os canais em um só lugar, organize em equipes, distribua automaticamente de acordo com seu negócio e tenha visibilidade de todos os indicadores de atendimento que um gestor precisa.",
+    "subtitle":"2025 - Profissional",
+    "tag":"produto"
+
   }
 ]
