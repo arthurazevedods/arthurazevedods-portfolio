@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { CgGitFork } from "react-icons/cg";
 import { AiFillStar } from "react-icons/ai";
-
+import { Link } from "@tanstack/react-router";
 function Navbar() {
   const [scrolled, setScrolled] = useState(false);
 
@@ -12,6 +12,8 @@ function Navbar() {
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
+
+  
   return (
     <div
       className={`navbar fixed z-20 w-full transition-colors duration-300 ${
@@ -58,6 +60,7 @@ function Navbar() {
                 <li>
                   <a className="text-base py-2 px-4">Repositórios</a>
                 </li>
+
                 <li>
                   <a className="text-base py-2 px-4">Projetos</a>
                 </li>
@@ -90,13 +93,25 @@ function Navbar() {
           </li>
           <li>
             <details>
-              <summary className="px-4 py-2">Porfolio</summary>
+              <summary className="px-4 py-2">
+                <Link to="/projects">Porfolio</Link>
+              </summary>
               <ul className="p-2">
                 <li>
-                  <a className="text-base py-2 px-4">Repositórios</a>
+                  <Link
+                    to="/projects"
+                    className="[&.active]:font-bold text-base py-2 px-4"
+                  >
+                    Repositórios
+                  </Link>
                 </li>
                 <li>
-                  <a className="text-base py-2 px-4">Projetos</a>
+                  <Link
+                    to="/projects"
+                    className="[&.active]:font-bold text-base py-2 px-4"
+                  >
+                    Projetos
+                  </Link>
                 </li>
               </ul>
             </details>
@@ -106,7 +121,12 @@ function Navbar() {
               <summary className="px-8 py-2">Blog</summary>
               <ul className="p-2">
                 <li>
-                  <a className="text-base py-2 px-4" href="https://medium.com/@arthurazevedods">Medium</a>
+                  <a
+                    className="text-base py-2 px-4"
+                    href="https://medium.com/@arthurazevedods"
+                  >
+                    Medium
+                  </a>
                 </li>
                 <li>
                   <a className="text-base py-2 px-4">Codar Br</a>

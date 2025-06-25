@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import CardProject from "@/components/CardProject";
 import projectsData from "@/data/projects.json";
+import Radio from "@/components/Radio";
 
 export const Route = createFileRoute({
   component: Projects,
@@ -17,8 +18,12 @@ function Projects() {
             className="text-4xl md:text-5xl font-bold mb-12 text-[#bd93f9]"
             style={{ fontFamily: "var(--font-titles)" }}
           >
-            Projetos
+            Produtos, Projetos & Repositórios
           </h1>
+          <div className="w-full flex justify-center">
+            <Radio/>
+          </div>
+          
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
             {projectsData.map((project, index) => (
               <CardProject key={index} project={project} />
