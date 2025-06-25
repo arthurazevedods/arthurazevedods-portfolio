@@ -3,7 +3,6 @@ import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Skills from "./components/Skills";
 import Navbar from "./components/Navbar";
-import RecentWorks from "./components/SectionElement";
 
 function App() {
   return (
@@ -11,7 +10,6 @@ function App() {
       <Navbar />
       <main className="flex-1">
         <Hero />
-        <RecentWorks />
         <Skills />
       </main>
       <Footer />
