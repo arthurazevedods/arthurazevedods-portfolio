@@ -60,25 +60,6 @@ function Navbar() {
             </li>
             <li>
               <Link to="/projects">Porfolio</Link>
-              <ul className="p-2">
-                <li>
-                  <Link
-                    to="/projects"
-                    className="[&.active]:font-bold text-base py-2 px-4"
-                  >
-                    Repositórios
-                  </Link>
-                </li>
-
-                <li>
-                  <Link
-                    to="/projects"
-                    className="[&.active]:font-bold text-base py-2 px-4"
-                  >
-                    Projetos
-                  </Link>
-                </li>
-              </ul>
             </li>
             <li>
               <a className="text-lg py-2 px-4">Blog</a>
@@ -115,32 +96,14 @@ function Navbar() {
             </Link>
           </li>
           <li>
-            <Link to="/about" className="px-4 py-2">Sobre Mim</Link>
+            <Link to="/about" className="px-4 py-2">
+              Sobre Mim
+            </Link>
           </li>
           <li>
-            <details>
-              <summary className="px-4 py-2">
-                <Link to="/projects">Porfolio</Link>
-              </summary>
-              <ul className="p-2">
-                <li>
-                  <Link
-                    to="/projects"
-                    className="[&.active]:font-bold text-base py-2 px-4"
-                  >
-                    Repositórios
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to="/projects"
-                    className="[&.active]:font-bold text-base py-2 px-4"
-                  >
-                    Projetos
-                  </Link>
-                </li>
-              </ul>
-            </details>
+            <Link to="/projects" className="px-4 py-2">
+              Porfolio
+            </Link>
           </li>
           <li>
             <details>
