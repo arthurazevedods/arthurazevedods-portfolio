@@ -54,7 +54,7 @@ function Navbar() {
               </Link>
             </li>
             <li>
-              <Link to="/" className="text-lg py-2 px-4">
+              <Link to="/about" className="text-lg py-2 px-4">
                 Sobre Mim
               </Link>
             </li>
@@ -103,7 +103,7 @@ function Navbar() {
             </li>
           </ul>
         </div>
-        <a className="btn btn-ghost text-2xl rounded-md p-4 bg-[#8be9fd] text-[#282a36] font-bold">
+        <a className="btn btn-ghost text-2xl rounded-md p-4 bg-[#7359F8] text-[#282a36] font-bold">
           arthur
         </a>
       </div>
@@ -115,7 +115,7 @@ function Navbar() {
             </Link>
           </li>
           <li>
-            <a className="px-4 py-2">Sobre Mim</a>
+            <Link to="/about" className="px-4 py-2">Sobre Mim</Link>
           </li>
           <li>
             <details>
@@ -172,7 +172,7 @@ function Navbar() {
           href="https://github.com/arthurazevedods"
           target="_blank"
           rel="noreferrer"
-          className="inline-block bg-[var(--primary)] text-[var(--primary-foreground)] rounded-lg px-6 py-3 hover:bg-[var(--accent)] hover:text-[var(--accent-foreground)] transition mx-6 my-2 md:mx-0 md:my-0 text-xl"
+          className="inline-block bg-[var(--primary)] text-[var(--primary-foreground)] rounded-lg px-6 py-3 hover:bg-[#7359F8] hover:text-[var(--accent-foreground)] transition mx-6 my-2 md:mx-0 md:my-0 text-xl"
         >
           <CgGitFork className="inline-block text-2xl align-middle" />{" "}
           <AiFillStar className="inline-block text-xl align-middle" />

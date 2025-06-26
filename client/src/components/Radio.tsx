@@ -3,10 +3,9 @@ import { useRadioStore } from "../store/radio";
 const Radio = () => {
   const selected = useRadioStore((state) => state.selected);
   const setSelected = useRadioStore((state) => state.setSelected);
-
   return (
     <div className={`relative flex items-center rounded-lg bg-[#282a36] text-[#f8f8f2] w-[300px] overflow-hidden border-3  mb-4 ${
-      selected === 1 ? "border-[#50fa7b]"
+      selected === 1 ? "border-[#F87359]"
       : selected === 2 ? "border-[#ffb86c]"
       : "border-[#bd93f9] "
     }`}
@@ -58,7 +57,7 @@ const Radio = () => {
         className={`absolute top-0 h-full w-1/3 z-0 transition-all duration-150
           ${
             selected === 1
-              ? "left-0 bg-[#50fa7b]"
+              ? "left-0 bg-[#F87359]"
               : selected === 2
               ? "left-1/3 bg-[#ffb86c]"
               : "left-2/3 bg-[#bd93f9]"
