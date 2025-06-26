@@ -32,15 +32,15 @@ function Projects() {
   return (
     <div className="flex flex-col min-h-[100vh] w-full bg-background text-foreground">
       <Navbar />
-      <main className="flex-1 flex flex-col items-center py-16 px-4">
+      <main className="flex-1 flex flex-col items-center py-24 px-4">
         <section className="w-full max-w-5xl">
           <h1
-            className="text-4xl md:text-5xl font-bold mb-12 text-[#bd93f9]"
+            className="text-4xl md:text-5xl font-bold mb-12 text-[var(--foreground)]"
             style={{ fontFamily: "var(--font-titles)" }}
           >
             Produtos, Projetos & Repositórios
           </h1>
-          <div className="w-full flex justify-center">
+          <div className="w-full flex justify-center py-12">
             <Radio />
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10">

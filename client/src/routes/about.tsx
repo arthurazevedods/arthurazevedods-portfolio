@@ -14,13 +14,12 @@ function About() {
       <section className="bg-[#282a36] text-[#f8f8f2] min-h-[80vh]">
         <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-16">
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
-            <div className="relative h-64 overflow-hidden rounded-3xl sm:h-80 lg:order-last lg:h-full shadow-lg border border-[#44475a]/40">
-              {/* Substitua src="#" por uma imagem real se desejar */}
+            <div className="relative sm:top-12 lg:top-24 overflow-hidden rounded-3xl sm:h-80 lg:order-last lg:h-100 shadow-lg border border-[#44475a]/40">
               <img
-                src="/vite.svg"
+                src="/foto.jpg"
                 className="absolute inset-0 h-full w-full object-cover rounded-3xl"
                 alt="banner"
-                width={700}
+                width={400}
                 height={400}
                 style={{ background: "#44475a" }}
               />
