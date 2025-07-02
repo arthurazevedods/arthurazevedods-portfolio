@@ -1,6 +1,6 @@
 const ContactMe = () => {
   return (
-    <div className="bg-[#282a36] rounded-2xl p-8 w-full max-w-lg mx-auto shadow-lg border border-[#44475a]/40">
+    <div className="container bg-[#282a36] rounded-2xl p-8 w-full max-w-3xl mx-auto shadow-lg border border-[#44475a]/40">
       <span className="block text-2xl font-bold text-center text-[#f8f8f2] mb-6" style={{ fontFamily: "var(--font-titles)" }}>
         Entre em contato
       </span>
