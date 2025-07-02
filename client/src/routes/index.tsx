@@ -4,6 +4,7 @@ import Hero from "@/components/Hero";
 import Skills from "@/components/Skills";
 import Navbar from "@/components/Navbar";
 import SectionElement from "@/components/SectionElement";
+import ContactMe from "@/components/ContactMe";
 
 export const Route = createFileRoute({
   component: Index,
@@ -18,6 +19,7 @@ function Index() {
         <SectionElement section={{ name: "Produtos", projectsPath:"../data/projects.json"}} />
         <SectionElement section={{ name: "Trabalhos Recentes", projectsPath:"../data/projects.json" }} />
         <Skills />
+        <ContactMe />
       </main>
       <Footer />
     </div>

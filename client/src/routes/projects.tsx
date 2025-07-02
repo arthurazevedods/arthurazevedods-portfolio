@@ -35,7 +35,7 @@ function Projects() {
       <main className="flex-1 flex flex-col items-center py-24 px-4">
         <section className="w-full max-w-5xl">
           <h1
-            className="text-4xl md:text-5xl font-bold mb-12 text-[var(--foreground)]"
+            className="text-4xl md:text-5xl font-bold my-12 text-[var(--foreground)]"
             style={{ fontFamily: "var(--font-titles)" }}
           >
             Produtos, Projetos & Repositórios
