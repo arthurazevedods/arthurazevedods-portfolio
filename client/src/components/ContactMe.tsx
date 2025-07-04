@@ -1,10 +1,48 @@
+import { useState } from 'react';
+
 const ContactMe = () => {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [comment, setComment] = useState('');
+  const [message, setMessage] = useState('');
+
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    setMessage('Enviando...');
+
+    try {
+      const response = await fetch('http://localhost:8080/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ name, email, comment }),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        setMessage(data.message);
+        setName('');
+        setEmail('');
+        setComment('');
+      } else {
+        setMessage(`Erro: ${data.message || 'Algo deu errado'}`);
+      }
+    } catch (error: any) {
+      setMessage(`Erro de rede: ${error.message}`);
+      console.error('Erro ao enviar formulário:', error);
+    }
+  };
+
   return (
     <div className="container bg-[#282a36] rounded-2xl p-8 w-full max-w-3xl mx-auto shadow-lg border border-[#44475a]/40">
       <span className="block text-2xl font-bold text-center text-[#f8f8f2] mb-6" style={{ fontFamily: "var(--font-titles)" }}>
         Entre em contato
       </span>
-      <form className="flex flex-col gap-4">
+      <form className="flex flex-col gap-4" onSubmit={handleSubmit}>
         <div className="relative">
           <input
             type="text"
@@ -12,6 +50,8 @@ const ContactMe = () => {
             name="name"
             placeholder=" "
             required
+            value={name}
+            onChange={(e) => setName(e.target.value)}
             className="peer w-full bg-transparent border-b-2 border-[#bd93f9] text-[#f8f8f2] py-3 px-2 focus:outline-none focus:border-[#50fa7b] transition"
           />
           <label
@@ -28,6 +68,8 @@ const ContactMe = () => {
             name="email"
             placeholder=" "
             required
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
             className="peer w-full bg-transparent border-b-2 border-[#bd93f9] text-[#f8f8f2] py-3 px-2 focus:outline-none focus:border-[#50fa7b] transition"
           />
           <label
@@ -44,6 +86,8 @@ const ContactMe = () => {
             rows={5}
             placeholder=" "
             required
+            value={comment}
+            onChange={(e) => setComment(e.target.value)}
             className="peer w-full bg-transparent border-b-2 border-[#bd93f9] text-[#f8f8f2] py-3 px-2 focus:outline-none focus:border-[#50fa7b] transition resize-none"
           />
           <label
@@ -59,6 +103,7 @@ const ContactMe = () => {
         >
           Enviar
         </button>
+        {message && <p className="text-center text-[#f8f8f2] mt-4">{message}</p>}
       </form>
     </div>
   );
