@@ -52,11 +52,19 @@ const ContactMe = () => {
             required
             value={name}
             onChange={(e) => setName(e.target.value)}
-            className="peer w-full bg-transparent border-b-2 border-[#bd93f9] text-[#f8f8f2] py-3 px-2 focus:outline-none focus:border-[#50fa7b] transition"
+            className="peer w-full bg-transparent border-b-2 border-[#bd93f9] text-[#f8f8f2] py-3 px-2 pt-4 focus:outline-none focus:border-[#50fa7b] transition"
           />
           <label
             htmlFor="name"
-            className="absolute left-2 top-1/2 -translate-y-1/2 text-[#bd93f9] text-base pointer-events-none transition-all duration-200 peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-base peer-focus:top-0 peer-focus:text-sm peer-focus:text-[#50fa7b]"
+            className={`absolute left-2 transition-all duration-200 pointer-events-none
+              text-[#bd93f9] text-base
+              ${name.length === 0
+                ? "top-1/2 -translate-y-1/2"
+                : "top-0 text-sm text-[#50fa7b] -translate-y-0"
+              }
+              peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2
+              peer-focus:top-0 peer-focus:text-sm peer-focus:text-[#50fa7b] peer-focus:-translate-y-0
+            `}
           >
             Nome
           </label>
@@ -70,11 +78,19 @@ const ContactMe = () => {
             required
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className="peer w-full bg-transparent border-b-2 border-[#bd93f9] text-[#f8f8f2] py-3 px-2 focus:outline-none focus:border-[#50fa7b] transition"
+            className="peer w-full bg-transparent border-b-2 border-[#bd93f9] text-[#f8f8f2] py-3 px-2 pt-4 focus:outline-none focus:border-[#50fa7b] transition"
           />
           <label
             htmlFor="email"
-            className="absolute left-2 top-1/2 -translate-y-1/2 text-[#bd93f9] text-base pointer-events-none transition-all duration-200 peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-base peer-focus:top-0 peer-focus:text-sm peer-focus:text-[#50fa7b]"
+            className={`absolute left-2 transition-all duration-200 pointer-events-none
+              text-[#bd93f9] text-base 
+              ${email.length === 0
+                ? "top-1/2 -translate-y-1/2"
+                : "top-0 text-sm text-[#50fa7b] -translate-y-0"
+              }
+              peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2
+              peer-focus:top-0 peer-focus:text-sm peer-focus:text-[#50fa7b] peer-focus:-translate-y-0
+            `}
           >
             Email
           </label>
@@ -88,11 +104,19 @@ const ContactMe = () => {
             required
             value={comment}
             onChange={(e) => setComment(e.target.value)}
-            className="peer w-full bg-transparent border-b-2 border-[#bd93f9] text-[#f8f8f2] py-3 px-2 focus:outline-none focus:border-[#50fa7b] transition resize-none"
+            className="peer w-full bg-transparent border-b-2 border-[#bd93f9] text-[#f8f8f2] py-3 px-2 pt-4 focus:outline-none focus:border-[#50fa7b] transition resize-none"
           />
           <label
             htmlFor="comment"
-            className="absolute left-2 top-4 text-[#bd93f9] text-base pointer-events-none transition-all duration-200 peer-placeholder-shown:top-6 peer-placeholder-shown:text-base peer-focus:top-0 peer-focus:text-sm peer-focus:text-[#50fa7b]"
+            className={`absolute left-2 transition-all duration-200 pointer-events-none
+              text-[#bd93f9] text-base
+              ${comment.length === 0
+                ? "top-4"
+                : "top-0 text-sm text-[#50fa7b]"
+              }
+              peer-placeholder-shown:top-6 peer-placeholder-shown:text-base
+              peer-focus:top-0 peer-focus:text-sm peer-focus:text-[#50fa7b]
+            `}
           >
             Mensagem
           </label>
