@@ -84,8 +84,8 @@ function Navbar() {
             </li>
           </ul>
         </div>
-        <a className="btn btn-ghost text-2xl rounded-md p-4 bg-[#7359F8] text-[#282a36] font-bold">
-          arthur
+        <a className="btn btn-ghost text-4xl rounded-md p-4  text-white font-bold italic">
+          A
         </a>
       </div>
       <div className="navbar-center hidden lg:flex">

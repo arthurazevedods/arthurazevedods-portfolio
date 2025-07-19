@@ -36,5 +36,13 @@
     "subtitle":"Reposiório - Contínuo",
     "tag":"repositorio"
 
+  },
+  {
+    "title": "Momentos do Bebê",
+    "link": "https://momentosdobebe.vercel.app/",
+    "description":"MVP de uma aplicação que organiza uma linha do tempo e detalhes da rotina de um bebê.",
+    "subtitle":"2025 - MVP - Desenvolvedor  ",
+    "tag":"projeto"
+
   }
 ]
